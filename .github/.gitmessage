@@ -1,0 +1,9 @@
+[TYPE] <message>
+
+# Message
+# - Types are: FEAT, FIX, DOCS, REF, TEST
+# - Your commit message should aim to complete the line:
+# - "If applied, this commit will"...
+# - Explain the thinking behind the commit
+# - No more than 72 chars
+# - Do not use markdown

@@ -1,0 +1,16 @@
+query,answer,success
+Pease list all the current senior squad members for the Manchester United men's team,"The squad of MANCHESTER UNITED is [Player(name='John Manchester', position='Goalkeeper', number=1)]",True
+Can you provide the full list of current senior players for Manchester United men's team?,"The squad of MANCHESTER UNITED is [Player(name='John Manchester', position='Goalkeeper', number=1)]",True
+Please show me the current Manchester United men's first team squad.,"The squad of MANCHESTER UNITED is [Player(name='John Manchester', position='Goalkeeper', number=1)]",True
+I'd like to see all the players currently in the senior squad for Manchester City men's side.,"The squad of MANCHESTER CITY is [Player(name='John Manchester City', position='Goalkeeper', number=1)]",True
+List the current roster of senior players for Liverpool men's football team.,"The squad of LIVERPOOL is [Player(name='John Liverpool', position='Goalkeeper', number=1)]",True
+Who are the current members of Manchester United's men's senior squad?,"The squad of MANCHESTER UNITED is [Player(name='John Manchester', position='Goalkeeper', number=1)]",True
+What is the weather in Warsaw?,I cannot help you with that. Please ask a question regarding Premier League teams.,False
+What is the population of Warsaw?,I cannot help you with that. Please ask a question regarding Premier League teams.,False
+How are you?,I cannot help you with that. Please ask a question regarding Premier League teams.,False
+What is the capital of France?,I cannot help you with that. Please ask a question regarding Premier League teams.,False
+My name is John.,I cannot help you with that. Please ask a question regarding Premier League teams.,False
+Please tell me the squad of the Chico Bulls,I cannot help you with that. Please ask a question regarding Premier League teams.,False
+Can you provide the full list of current senior players for Barcelona men's team?,I cannot help you with that. Please ask a question regarding Premier League teams.,False
+List the current roster of senior players for Paris Saint-Germain men's football team.,I cannot help you with that. Please ask a question regarding Premier League teams.,False
+List the current roster of senior players for Real Madrid men's football team.,I cannot help you with that. Please ask a question regarding Premier League teams.,False

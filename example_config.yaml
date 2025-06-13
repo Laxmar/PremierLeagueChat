@@ -1,0 +1,4 @@
+model_name: gpt-4.1
+logging_level: INFO
+langraph_debug: false
+OPENAI_API_KEY: <your_api_key>
