@@ -1,5 +1,6 @@
 import asyncio
 from dataclasses import dataclass
+from typing import cast
 from loguru import logger
 
 from langgraph.graph import StateGraph, END
@@ -8,6 +9,7 @@ from langchain_openai import ChatOpenAI
 from langchain.globals import set_verbose, set_debug
 import streamlit as st
 
+from src.backend.prompts.formulate_answer import build_formulate_answer_prompt
 from src.backend.premier_league_api.base import IPremierLeagueApi
 from src.backend.premier_league_api.sportdb import SportDBApi
 from src.backend.premier_league_api.exceptions import APIError
@@ -118,10 +120,10 @@ class PremierLeagueAgent:
         return state
     
     def _formulate_response(self, state: AgentState) -> AgentState:
-        squad = state.squad
-        answer = f"The squad of {state.team_name.upper()} is {squad.players}"
-        # TODO use LLM to formulate response based suited for the user query
-        state.answer = answer
+        prompt = build_formulate_answer_prompt(state.squad, state.user_query.content)
+        response = self._model.invoke(prompt)
+        # TODO stream the answer
+        state.answer = cast(str, response.content)
         state.success = True
         return state
 
@@ -130,7 +132,7 @@ class PrototypeUI:
     WELCOME_MESSAGE: str = ('Hey there! I am a Premier League assistant. I can answer only a questions regarding Premier League teams for season 2025/2026. \n \
             I know only senior squad members. I work best with English, and will answer in English.')
             
-    EXAMPLE_MESSAGES: str = 'You can start with "What is the squad of the Manchester United?" or "What is the squad of the Liverpool?"'
+    EXAMPLE_MESSAGES: str = 'You can start with "What is the squad of the Manchester United?" or What are defenders of the Manchester United?"'
 
     def __init__(self, agent: PremierLeagueAgent):
         st.set_page_config(page_title="Premier League Chat", page_icon="⚽")

@@ -9,6 +9,7 @@ BASE_USER_QUERIES = [
     "Who are the current members of Manchester United's men's senior squad?"
 ]
 
+
 IRRELEVANT_USER_QUERIES = [
     "What is the weather in Warsaw?",
     "What is the population of Warsaw?",
@@ -22,4 +23,9 @@ NOT_PREMIER_LEAGUE_TEAMS_QUERIES = [
     "Can you provide the full list of current senior players for Barcelona men's team?",
     "List the current roster of senior players for Paris Saint-Germain men's football team.",
     "List the current roster of senior players for Real Madrid men's football team."
+]
+
+PRECISE_USER_QUERIES = [
+    "What are the players born after 2000 of the Manchester United?",
+    "What are defenders of the Manchester United?",
 ]
