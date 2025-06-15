@@ -1,18 +1,7 @@
-import enum
 
-from collections import defaultdict
 from datetime import date
-from src.backend.squad import Squad
 
-class PlayersGroup(enum.StrEnum):
-    Goalkeepers = "Goalkeepers"
-    Manager = "Manager"
-    Defenders = "Defenders"
-    Midfielders = "Midfielders"
-    Forwards = "Forwards"
-    Others = "Others"
-
-ALL_PLAYER_GROUPS = list(PlayersGroup)
+from src.backend.squad import ALL_PLAYER_GROUPS, PlayersGroup, Squad
 
 def build_formulate_answer_prompt(squad: Squad, user_question: str) -> str:
     """Builds a prompt for the model to formulate an answer to the user question based on the squad data.
@@ -22,32 +11,11 @@ def build_formulate_answer_prompt(squad: Squad, user_question: str) -> str:
     Returns:
         str: The prompt for the model.
     """
-
-    postion_to_player_group = {
-        "Goalkeeper": PlayersGroup.Goalkeepers,
-        "Manager": PlayersGroup.Manager,
-        "Defender": PlayersGroup.Defenders,
-        "Centre-Back": PlayersGroup.Defenders,
-        "Left-Back": PlayersGroup.Defenders,
-        "Right-Back": PlayersGroup.Defenders,
-        "Attacking Midfield": PlayersGroup.Midfielders,
-        "Central Midfield": PlayersGroup.Midfielders,
-        "Defensive Midfield": PlayersGroup.Midfielders,
-        "Centre-Forward": PlayersGroup.Forwards,
-        "Right Winger": PlayersGroup.Forwards,
-        "Left Wing": PlayersGroup.Forwards,
-    }
-
-    grouped = defaultdict(list)
-    for player in squad.players:
-        group = postion_to_player_group.get(player.position, PlayersGroup.Others)
-        grouped[group].append(player)
-
     markdown_parts = ["# Squad\n"]
     for section in ALL_PLAYER_GROUPS:
-        if section in grouped:
+        if section in squad.get_player_group():
             markdown_parts.append(f"## {section}")
-            for player in grouped[section]:
+            for player in squad.get_player_group()[section]:
                 if section == PlayersGroup.Manager:
                     markdown_parts.append(f"- {player.name} ({player.date_of_birth})")
                 else:
