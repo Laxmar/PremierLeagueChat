@@ -52,7 +52,7 @@ poetry add <package_name>
 - Python 3.12
 - Poetry
 - Pytest
-- pyright
+- Pyright
 - Langchain
 - Langgraph
 - Streamlit

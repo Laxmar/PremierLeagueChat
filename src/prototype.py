@@ -1,9 +1,13 @@
 import asyncio
 from dataclasses import dataclass
+from random import randint
 from typing import cast
+from langchain_core.runnables.config import RunnableConfig
+from langgraph.types import Command
 from loguru import logger
 
 from langgraph.graph import StateGraph, END
+from langgraph.checkpoint.memory import MemorySaver
 from langchain_core.messages import HumanMessage
 from langchain_openai import ChatOpenAI
 from langchain.globals import set_verbose, set_debug
@@ -11,6 +15,7 @@ import streamlit as st
 
 from src.backend.prompts.formulate_answer import build_formulate_answer_prompt
 from src.backend.prompts.clarify_team_name import CLARIFY_TEAM_NAME_PROMPT
+from src.backend.prompts.interpret_user_clarification import INTERPRET_USER_CLARIFICATION_PROMPT
 from src.backend.premier_league_api.base import IPremierLeagueApi
 from src.backend.premier_league_api.sportdb import SportDBApi
 from src.backend.premier_league_api.exceptions import APIError
@@ -26,6 +31,7 @@ class AgentState:
     squad: Squad | None = None
     answer: str | None = None
     clarification_request: str | None = None
+    clarification_response: str | None = None
     team_found: bool = False
     valid: bool = False
     success: bool = False
@@ -38,41 +44,80 @@ class PremierLeagueAgent:
     def __init__(self, model_name: str, squad_api: IPremierLeagueApi):
         self._model = ChatOpenAI(model=model_name)
         self._squad_api = squad_api
+        self._config: RunnableConfig = {"configurable": {"thread_id": str(randint(0, 1000))}} 
         graph = StateGraph(AgentState)
+        memory = MemorySaver()
         
         # Nodes:
         graph.add_node("Validate", self._validate_query)
         graph.add_node("ExtractTeam", self._extract_team)
         graph.add_node("Clarify", self._ask_for_clarification)
+        graph.add_node("UserClarify", self._handle_user_clarification)
         graph.add_node("GetSquad", self._search_squad)
         graph.add_node("FormulateResponse", self._formulate_response)
         graph.set_entry_point("Validate")
         
         # Edges:
+        # TODO refactor to make it cleaner
         graph.add_conditional_edges("Validate", 
             lambda state: "valid" if state.valid else "invalid",
             {"valid": "ExtractTeam", "invalid": END})
+        
         graph.add_conditional_edges("ExtractTeam", 
             lambda state: "team_found" if state.team_found else "not_found",
             {"team_found": "GetSquad", "not_found": "Clarify"})
         
-        graph.add_edge("Clarify", END) # TODO ask user for clarification
+        graph.add_edge("Clarify", "UserClarify") 
+        
+        graph.add_conditional_edges("UserClarify", 
+            lambda state: "team_found" if state.team_found else "unknown",
+            {"team_found": "GetSquad", "unknown": END})
         
         graph.add_edge("GetSquad", "FormulateResponse")
         graph.set_finish_point("FormulateResponse")
         
-        self._graph = graph.compile()
+        self._graph = graph.compile(checkpointer=memory, interrupt_before=['UserClarify'])
+    
+    def _handle_user_clarification(self, state: AgentState) -> AgentState:
+        prompt = INTERPRET_USER_CLARIFICATION_PROMPT.format(
+            clarification_request=state.clarification_request,
+            clarification_response=state.clarification_response
+        )
+        response = self._model.invoke(prompt)
+        team_name = cast(str, response.content).strip().lower()
+        is_found = team_name in self._squad_api.get_teams()
         
+        state.answer = "Sorry, I could not find the team you were asking about."
+        state.team_name = team_name
+        state.team_found = is_found
+        return state
+    
+    # TODO refactor and change name of the function
     async def ask(self, user_query: HumanMessage) -> str:
         """Ask the agent a question and return the final answer"""
         logger.debug(f'ask() user_query: {user_query}')
+        
+        graph_states = self._graph.get_state(self._config).values
+        clarification_needed = not graph_states.get('answer', None) and graph_states.get("clarification_request", None)
+        logger.debug(f'clarification_needed: {clarification_needed}')
+        if clarification_needed:
+            self._graph.update_state(self._config, {"clarification_response": user_query.content})
+            result = await self._graph.ainvoke(Command(resume=user_query.content), config=self._config)
+            answer = AgentState(**result).answer
+            logger.debug(f'ask() answer: {answer}')
+            return answer
+        
         result = await self._invoke(user_query)
         logger.debug(f'ask() result: {result}')
-        return  result.answer
+        if result.clarification_request:
+            return result.clarification_request
+        
+        return result.answer
         
     async def _invoke(self, user_query: HumanMessage) -> AgentState:
         """Invoke the agent with a user query"""
-        result = await self._graph.ainvoke(AgentState(user_query=user_query))
+        logger.debug(f'_invoke() user_query: {user_query}')
+        result = await self._graph.ainvoke(AgentState(user_query=user_query), config=self._config)
         return AgentState(**result)
 
     def save_graph_as_image(self, name: str = "graph.png"):
@@ -119,9 +164,6 @@ class PremierLeagueAgent:
         prompt = CLARIFY_TEAM_NAME_PROMPT.format(clubs=clubs, user_prompt=state.user_query.content)
         response = self._model.invoke(prompt)
         state.clarification_request = cast(str, response.content)
-        state.answer = state.clarification_request # TODO remove
-        # TODO interupt and get user input
-        # return self._graph.pause({"clarification_request": state.clarification_request})
         return state
     
     async def _search_squad(self, state: AgentState) -> AgentState:
@@ -180,6 +222,7 @@ class PrototypeUI:
     
 def main():
     """streamlit run src/prototype.py"""
+    # TODO cache it to not load it every time in streamlit st.cache_data
     config = Configuration.load()
     setup_logger(config.logging_level)
     if config.langraph_debug:
