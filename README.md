@@ -15,6 +15,7 @@ poetry install
 ```
 - copy example_config.yaml to config.yaml
 - fill OPENAI_API_KEY with your OpenAI API key
+- fill THE_SPORT_API_KEY with your TheSportDB API key (https://www.thesportsdb.com/)
 
 
 # Usage
@@ -50,11 +51,14 @@ poetry add <package_name>
 
 - Python 3.12
 - Poetry
+- Pytest
 - Langchain
 - Langgraph
 - Streamlit
 - Loguru
-- OpenAI models
+- OpenAI API
+- [TheSportDB API](https://www.thesportsdb.com/)
+
 
 ## Docs - TODO
 
