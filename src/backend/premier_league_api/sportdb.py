@@ -8,7 +8,6 @@ from loguru import logger
 from src.backend.premier_league_api.base import IPremierLeagueApi
 from src.backend.premier_league_api.exceptions import APIError, TeamNotFound
 from src.backend.squad import Player, Squad
-from src.configuration import Configuration
 
 
 class SportDBApi(IPremierLeagueApi):

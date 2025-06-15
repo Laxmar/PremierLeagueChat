@@ -29,3 +29,12 @@ PRECISE_USER_QUERIES = [
     "What are the players born after 2000 of the Manchester United?",
     "What are defenders of the Manchester United?",
 ]
+
+UNCLEAR_TEAMS_QUERIES = [
+    "What is the squad of Manchester?",
+    "What is the squad of Man?",
+    "What is the squad of Crystal?",
+    "What is the squad of Man City?",
+    "What is the squad of Brighton?",
+    "What is the squad of Menchessster?"
+]

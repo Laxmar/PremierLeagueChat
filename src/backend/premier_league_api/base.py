@@ -15,7 +15,7 @@ class IPremierLeagueApi(ABC):
         pass
     
     @abstractmethod
-    def get_team_squad(self, team_name: str) -> Squad:
+    async def get_team_squad(self, team_name: str) -> Squad:
         """ Returns squad of a team
         
         Args:

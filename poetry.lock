@@ -1470,6 +1470,18 @@ pyspark-connect = ["pyspark[connect] (>=3.5.0)"]
 sqlframe = ["sqlframe (>=3.22.0)"]
 
 [[package]]
+name = "nodeenv"
+version = "1.9.1"
+description = "Node.js virtual environment builder"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
+groups = ["main"]
+files = [
+    {file = "nodeenv-1.9.1-py2.py3-none-any.whl", hash = "sha256:ba11c9782d29c27c70ffbdda2d7415098754709be8a7056d79a737cd901155c9"},
+    {file = "nodeenv-1.9.1.tar.gz", hash = "sha256:6ec12890a2dab7946721edbfbcd91f3319c6ccc9aec47be7c7e6b7011ee6645f"},
+]
+
+[[package]]
 name = "numpy"
 version = "2.3.0"
 description = "Fundamental package for array computing in Python"
@@ -2301,6 +2313,27 @@ files = [
 
 [package.extras]
 windows-terminal = ["colorama (>=0.4.6)"]
+
+[[package]]
+name = "pyright"
+version = "1.1.402"
+description = "Command line wrapper for pyright"
+optional = false
+python-versions = ">=3.7"
+groups = ["main"]
+files = [
+    {file = "pyright-1.1.402-py3-none-any.whl", hash = "sha256:2c721f11869baac1884e846232800fe021c33f1b4acb3929cff321f7ea4e2982"},
+    {file = "pyright-1.1.402.tar.gz", hash = "sha256:85a33c2d40cd4439c66aa946fd4ce71ab2f3f5b8c22ce36a623f59ac22937683"},
+]
+
+[package.dependencies]
+nodeenv = ">=1.6.0"
+typing-extensions = ">=4.1"
+
+[package.extras]
+all = ["nodejs-wheel-binaries", "twine (>=3.4.1)"]
+dev = ["twine (>=3.4.1)"]
+nodejs = ["nodejs-wheel-binaries"]
 
 [[package]]
 name = "pytest"
@@ -3521,4 +3554,4 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "1155d3a9ed42c8f6dfcc4a1525401580fec9307a25f594a6f2904334885bf9c4"
+content-hash = "17aa28cc7f17fd7013ad21c01386ab7c7c0e2fdebb28ca4ff81e58f76dfc6109"

@@ -10,6 +10,7 @@ from langchain.globals import set_verbose, set_debug
 import streamlit as st
 
 from src.backend.prompts.formulate_answer import build_formulate_answer_prompt
+from src.backend.prompts.clarify_team_name import CLARIFY_TEAM_NAME_PROMPT
 from src.backend.premier_league_api.base import IPremierLeagueApi
 from src.backend.premier_league_api.sportdb import SportDBApi
 from src.backend.premier_league_api.exceptions import APIError
@@ -24,9 +25,11 @@ class AgentState:
     team_name: str | None = None
     squad: Squad | None = None
     answer: str | None = None
+    clarification_request: str | None = None
     team_found: bool = False
     valid: bool = False
     success: bool = False
+
 
 # TODO create a UpdateCommands instead of returning AgentState
 # TODO Replace hardcoded Nodes and Edges names with constants/enums
@@ -52,7 +55,9 @@ class PremierLeagueAgent:
         graph.add_conditional_edges("ExtractTeam", 
             lambda state: "team_found" if state.team_found else "not_found",
             {"team_found": "GetSquad", "not_found": "Clarify"})
+        
         graph.add_edge("Clarify", END) # TODO ask user for clarification
+        
         graph.add_edge("GetSquad", "FormulateResponse")
         graph.set_finish_point("FormulateResponse")
         
@@ -110,8 +115,13 @@ class PremierLeagueAgent:
         return state
 
     def _ask_for_clarification(self, state: AgentState) -> AgentState:
-        # TODO try find suggest team name based on extract team name - aka fixing typos
-        state.answer = "Team not found. Sorry can you try again?"
+        clubs = self._squad_api.get_teams()
+        prompt = CLARIFY_TEAM_NAME_PROMPT.format(clubs=clubs, user_prompt=state.user_query.content)
+        response = self._model.invoke(prompt)
+        state.clarification_request = cast(str, response.content)
+        state.answer = state.clarification_request # TODO remove
+        # TODO interupt and get user input
+        # return self._graph.pause({"clarification_request": state.clarification_request})
         return state
     
     async def _search_squad(self, state: AgentState) -> AgentState:
@@ -159,10 +169,11 @@ class PrototypeUI:
             with st.chat_message("assistant"):
                 message = HumanMessage(content=prompt)
                 with st.spinner("Assitant is searching for the squad..."):
+                    response = ""
                     try:
                         response = await st.session_state.agent.ask(message)
                     except APIError:
-                        response = 'Sorry, I cannot connect to the API. Please try again later.'
+                        response = "Sorry, I cannot connect to the API. Please try again later."
                     finally:
                         st.markdown(response)
                         st.session_state.messages.append({"role": "assistant", "content": response})

@@ -1,5 +1,6 @@
 
 from datetime import date
+from langchain.prompts import PromptTemplate
 
 from src.backend.squad import ALL_PLAYER_GROUPS, PlayersGroup, Squad
 
@@ -23,7 +24,7 @@ def build_formulate_answer_prompt(squad: Squad, user_question: str) -> str:
 
     squad_markdown = "\n".join(markdown_parts)
 
-    prompt_template = """
+    prompt_template = PromptTemplate.from_template("""
     You are a football squad expert assistant.
 
     You have access to the following squad:
@@ -43,7 +44,7 @@ def build_formulate_answer_prompt(squad: Squad, user_question: str) -> str:
     Now answer the following user question:
 
     {user_question}
-    """
+    """)
 
     prompt = prompt_template.format(
         squad_markdown=squad_markdown,
