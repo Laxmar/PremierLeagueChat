@@ -7,6 +7,7 @@ This is a simple chatbot that can answer questions regarding Premier League team
 - Python 3.12
 - Poetry
 - OPENAI_API_KEY with access to GPT-4.1
+- THE_SPORT_API_KEY with access to TheSportDB API
 
 # Setup
 
@@ -28,10 +29,10 @@ or
 source activate_env.fish
 ```
 
-## Run prototype
+## Run app with frontend
 
 ```bash
-streamlit run src/prototype.py
+streamlit run src/frontend/app.py
 ```
 
 ## Run the use cases test

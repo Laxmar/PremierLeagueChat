@@ -1,4 +1,3 @@
-
 from langchain.prompts import PromptTemplate
 
 CLARIFY_TEAM_NAME_PROMPT = PromptTemplate.from_template("""

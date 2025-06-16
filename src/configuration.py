@@ -7,6 +7,8 @@ from loguru import logger
 DEFUALT_CONFIG_PATH = "config.yaml"
 
 class Configuration(BaseModel):
+    """Application configuration Check example_config.yaml"""
+    
     model_name: str = "gpt-4.1"
     """https://platform.openai.com/docs/models/overview"""
     logging_level: str = "info"
@@ -24,7 +26,14 @@ class Configuration(BaseModel):
     
     @classmethod
     def load(cls, path: str = DEFUALT_CONFIG_PATH) -> "Configuration":
-        """load configuration from yaml file"""
+        """load configuration from yaml file
+        
+        Args:
+            path: path to the configuration file
+        
+        Returns:
+            Configuration: loaded configuration
+        """
         logger.debug(f'Loading configuration from {path}')
         with open(path, "r") as f:
             return cls(**yaml.safe_load(f))
