@@ -1,0 +1,334 @@
+2025-06-16 21:59:07.915 | INFO     | __main__:test_use_cases:43 - 
+
+Testing use cases... BASE_USER_QUERIES
+2025-06-16 21:59:12.478 | INFO     | __main__:test_use_cases:47 - Query: Pease list all the current senior squad members for the Manchester United men's team
+ Response: Here are the current senior squad members for the Manchester United men's team:
+
+**Goalkeepers**
+- Tom Heaton (1986-04-15) - Goalkeeper
+- André Onana (1996-04-02) - Goalkeeper
+- Altay Bayındır (1998-04-14) - Goalkeeper
+
+**Defenders**
+- Jonny Evans (1988-01-03) - Centre-Back
+- Luke Shaw (1995-07-12) - Left-Back
+- Harry Maguire (1993-03-05) - Centre-Back
+- Victor Lindelof (1994-07-17) - Centre-Back
+- Diogo Dalot (1999-03-18) - Right-Back
+- Matthijs de Ligt (1999-08-12) - Centre-Back
+- Noussair Mazraoui (1997-11-14) - Right-Back
+- Lisandro Martínez (1998-01-18) - Centre-Back
+- Leny Yoro (2006-11-13) - Centre-Back
+- Patrick Dorgu (2004-10-26) - Left-Back
+- Ayden Heaven (2006-09-22) - Defender
+
+**Midfielders**
+- Christian Eriksen (1992-02-14) - Attacking Midfield
+- Casemiro (1992-02-23) - Defensive Midfield
+- Bruno Fernandes (1994-09-08) - Central Midfield
+- Mason Mount (1999-01-10) - Attacking Midfield
+- Manuel Ugarte (2001-04-11) - Defensive Midfield
+- Kobbie Mainoo (2005-04-19) - Defensive Midfield
+
+**Forwards**
+- Joshua Zirkzee (2001-05-22) - Centre-Forward
+- Matheus Cunha (1999-05-27) - Centre-Forward
+- Amad Diallo (2002-07-11) - Right Winger
+- Rasmus Højlund (2003-02-04) - Centre-Forward
+- Alejandro Garnacho (2004-07-01) - Left Wing
+ Success: True
+2025-06-16 21:59:17.106 | INFO     | __main__:test_use_cases:47 - Query: Can you provide the full list of current senior players for Manchester United men's team?
+ Response: Here is the full list of current senior players for Manchester United men's team, including their positions and birthdates:
+
+**Goalkeepers**
+- Tom Heaton (1986-04-15) - Goalkeeper
+- André Onana (1996-04-02) - Goalkeeper
+- Altay Bayındır (1998-04-14) - Goalkeeper
+
+**Defenders**
+- Jonny Evans (1988-01-03) - Centre-Back
+- Luke Shaw (1995-07-12) - Left-Back
+- Harry Maguire (1993-03-05) - Centre-Back
+- Victor Lindelof (1994-07-17) - Centre-Back
+- Diogo Dalot (1999-03-18) - Right-Back
+- Matthijs de Ligt (1999-08-12) - Centre-Back
+- Noussair Mazraoui (1997-11-14) - Right-Back
+- Lisandro Martínez (1998-01-18) - Centre-Back
+- Leny Yoro (2006-11-13) - Centre-Back
+- Patrick Dorgu (2004-10-26) - Left-Back
+- Ayden Heaven (2006-09-22) - Defender
+
+**Midfielders**
+- Christian Eriksen (1992-02-14) - Attacking Midfield
+- Casemiro (1992-02-23) - Defensive Midfield
+- Bruno Fernandes (1994-09-08) - Central Midfield
+- Mason Mount (1999-01-10) - Attacking Midfield
+- Manuel Ugarte (2001-04-11) - Defensive Midfield
+- Kobbie Mainoo (2005-04-19) - Defensive Midfield
+
+**Forwards**
+- Joshua Zirkzee (2001-05-22) - Centre-Forward
+- Matheus Cunha (1999-05-27) - Centre-Forward
+- Amad Diallo (2002-07-11) - Right Winger
+- Rasmus Højlund (2003-02-04) - Centre-Forward
+- Alejandro Garnacho (2004-07-01) - Left Wing
+ Success: True
+2025-06-16 21:59:22.029 | INFO     | __main__:test_use_cases:47 - Query: Please show me the current Manchester United men's first team squad.
+ Response: Here is the current Manchester United men's first team squad:
+
+**Goalkeepers**
+- Tom Heaton (1986-04-15) - Goalkeeper
+- André Onana (1996-04-02) - Goalkeeper
+- Altay Bayındır (1998-04-14) - Goalkeeper
+
+**Defenders**
+- Jonny Evans (1988-01-03) - Centre-Back
+- Luke Shaw (1995-07-12) - Left-Back
+- Harry Maguire (1993-03-05) - Centre-Back
+- Victor Lindelof (1994-07-17) - Centre-Back
+- Diogo Dalot (1999-03-18) - Right-Back
+- Matthijs de Ligt (1999-08-12) - Centre-Back
+- Noussair Mazraoui (1997-11-14) - Right-Back
+- Lisandro Martínez (1998-01-18) - Centre-Back
+- Leny Yoro (2006-11-13) - Centre-Back
+- Patrick Dorgu (2004-10-26) - Left-Back
+- Ayden Heaven (2006-09-22) - Defender
+
+**Midfielders**
+- Christian Eriksen (1992-02-14) - Attacking Midfield
+- Casemiro (1992-02-23) - Defensive Midfield
+- Bruno Fernandes (1994-09-08) - Central Midfield
+- Mason Mount (1999-01-10) - Attacking Midfield
+- Manuel Ugarte (2001-04-11) - Defensive Midfield
+- Kobbie Mainoo (2005-04-19) - Defensive Midfield
+
+**Forwards**
+- Joshua Zirkzee (2001-05-22) - Centre-Forward
+- Matheus Cunha (1999-05-27) - Centre-Forward
+- Amad Diallo (2002-07-11) - Right Winger
+- Rasmus Højlund (2003-02-04) - Centre-Forward
+- Alejandro Garnacho (2004-07-01) - Left Wing
+
+**Manager**
+- Ruben Amorim (1985-01-27)
+ Success: True
+2025-06-16 21:59:27.145 | INFO     | __main__:test_use_cases:47 - Query: I'd like to see all the players currently in the senior squad for Manchester City men's side.
+ Response: Here are all the players currently in the senior squad for Manchester City men's side:
+
+**Goalkeepers**
+- Ederson (1993-08-17) - Goalkeeper
+- Scott Carson (1985-09-03) - Goalkeeper
+- Marcus Bettinelli (1992-05-24) - Goalkeeper
+- Stefan Ortega (1992-11-06) - Goalkeeper
+
+**Defenders**
+- Nathan Ake (1995-02-18) - Centre-Back
+- John Stones (1994-05-28) - Centre-Back
+- Manuel Akanji (1995-07-19) - Centre-Back
+- Ruben Dias (1997-05-14) - Centre-Back
+- Rayan Aït-Nouri (2001-06-06) - Left-Back
+- Joško Gvardiol (2002-01-23) - Centre-Back
+- Rico Lewis (2004-11-21) - Right-Back
+- Abduqodir Khusanov (2004-02-29) - Centre-Back
+- Vitor Reis (2006-01-12) - Defender
+
+**Midfielders**
+- Mateo Kovacic (1994-05-06) - Central Midfield
+- Bernardo Silva (1994-08-10) - Attacking Midfield
+- İlkay Gündoğan (1990-10-24) - Central Midfield
+- Rodri (1996-06-22) - Defensive Midfield
+- Tijjani Reijnders (1998-07-26) - Central Midfield
+- Rayan Cherki (2003-08-17) - Attacking Midfield
+- Matheus Nunes (1998-08-27) - Central Midfield
+- Nico González (2002-01-03) - Central Midfield
+- James McAtee (2002-10-18) - Central Midfield
+
+**Forwards**
+- Jack Grealish (1995-09-10) - Left Wing
+- Phil Foden (2000-05-28) - Left Wing
+- Erling Haaland (2000-07-21) - Centre-Forward
+- Jérémy Doku (2002-05-27) - Right Winger
+- Omar Marmoush (1999-02-07) - Left Wing
+- Savinho (2004-04-10) - Left Wing
+- Oscar Bobb (2003-07-12) - Right Winger
+
+**Manager**
+- Pep Guardiola (1971-01-18)
+ Success: True
+2025-06-16 21:59:34.830 | INFO     | __main__:test_use_cases:47 - Query: List the current roster of senior players for Liverpool men's football team.
+ Response: Here is the current roster of senior players for Liverpool men's football team:
+
+**Goalkeepers**
+- Alisson Becker (Goalkeeper) – 1992-10-02
+- Vitezslav Jaros (Goalkeeper) – 2001-07-23
+
+**Defenders**
+- Andrew Robertson (Left-Back) – 1994-03-11
+- Virgil van Dijk (Centre-Back) – 1991-07-08
+- Joe Gomez (Centre-Back) – 1997-05-23
+- Ibrahima Konate (Centre-Back) – 1999-05-25
+- Kostas Tsimikas (Left-Back) – 1996-05-12
+- Jeremie Frimpong (Defender) – 2000-12-10
+- Conor Bradley (Right-Back) – 2003-07-09
+- Jarell Quansah (Centre-Back) – 2003-01-29
+
+**Midfielders**
+- Curtis Jones (Central Midfield) – 2001-01-30
+- Harvey Elliott (Attacking Midfield) – 2003-04-04
+- Alexis Mac Allister (Central Midfield) – 1998-12-24
+- Ryan Gravenberch (Central Midfield) – 2002-05-16
+- Dominik Szoboszlai (Central Midfield) – 2000-10-25
+- Wataru Endo (Defensive Midfield) – 1993-02-09
+
+**Forwards**
+- Mohamed Salah (Right Winger) – 1992-06-15
+- Diogo Jota (Left Wing) – 1996-12-04
+- Cody Gakpo (Left Wing) – 1999-05-07
+- Federico Chiesa (Left Wing) – 1997-10-25
+- Luis Díaz (Left Wing) – 1997-01-13
+- Darwin Núñez (Centre-Forward) – 1999-06-24
+
+**Manager**
+- Arne Slot – 1978-09-17
+ Success: True
+2025-06-16 21:59:40.090 | INFO     | __main__:test_use_cases:47 - Query: Who are the current members of Manchester United's men's senior squad?
+ Response: Here are the current members of Manchester United's men's senior squad:
+
+**Goalkeepers**
+- Tom Heaton (1986-04-15) - Goalkeeper
+- André Onana (1996-04-02) - Goalkeeper
+- Altay Bayındır (1998-04-14) - Goalkeeper
+
+**Defenders**
+- Jonny Evans (1988-01-03) - Centre-Back
+- Luke Shaw (1995-07-12) - Left-Back
+- Harry Maguire (1993-03-05) - Centre-Back
+- Victor Lindelof (1994-07-17) - Centre-Back
+- Diogo Dalot (1999-03-18) - Right-Back
+- Matthijs de Ligt (1999-08-12) - Centre-Back
+- Noussair Mazraoui (1997-11-14) - Right-Back
+- Lisandro Martínez (1998-01-18) - Centre-Back
+- Leny Yoro (2006-11-13) - Centre-Back
+- Patrick Dorgu (2004-10-26) - Left-Back
+- Ayden Heaven (2006-09-22) - Defender
+
+**Midfielders**
+- Christian Eriksen (1992-02-14) - Attacking Midfield
+- Casemiro (1992-02-23) - Defensive Midfield
+- Bruno Fernandes (1994-09-08) - Central Midfield
+- Mason Mount (1999-01-10) - Attacking Midfield
+- Manuel Ugarte (2001-04-11) - Defensive Midfield
+- Kobbie Mainoo (2005-04-19) - Defensive Midfield
+
+**Forwards**
+- Joshua Zirkzee (2001-05-22) - Centre-Forward
+- Matheus Cunha (1999-05-27) - Centre-Forward
+- Amad Diallo (2002-07-11) - Right Winger
+- Rasmus Højlund (2003-02-04) - Centre-Forward
+- Alejandro Garnacho (2004-07-01) - Left Wing
+
+**Manager**
+- Ruben Amorim (1985-01-27)
+ Success: True
+2025-06-16 21:59:40.091 | INFO     | __main__:test_use_cases:51 - 
+
+Testing use cases... IRRELEVANT_USER_QUERIES
+2025-06-16 21:59:40.803 | INFO     | __main__:test_use_cases:54 - Query: What is the weather in Warsaw?
+ Response: I cannot help you with that. Please ask a question regarding Premier League teams.
+ Success: False
+2025-06-16 21:59:41.327 | INFO     | __main__:test_use_cases:54 - Query: What is the population of Warsaw?
+ Response: I cannot help you with that. Please ask a question regarding Premier League teams.
+ Success: False
+2025-06-16 21:59:41.885 | INFO     | __main__:test_use_cases:54 - Query: How are you?
+ Response: I cannot help you with that. Please ask a question regarding Premier League teams.
+ Success: False
+2025-06-16 21:59:42.337 | INFO     | __main__:test_use_cases:54 - Query: What is the capital of France?
+ Response: I cannot help you with that. Please ask a question regarding Premier League teams.
+ Success: False
+2025-06-16 21:59:43.208 | INFO     | __main__:test_use_cases:54 - Query: My name is John.
+ Response: I cannot help you with that. Please ask a question regarding Premier League teams.
+ Success: False
+2025-06-16 21:59:43.208 | INFO     | __main__:test_use_cases:58 - 
+
+Testing use cases... NOT_PREMIER_LEAGUE_TEAMS_QUERIES
+2025-06-16 21:59:43.768 | INFO     | __main__:test_use_cases:61 - Query: Please tell me the squad of the Chico Bulls
+ Response: I cannot help you with that. Please ask a question regarding Premier League teams.
+ Success: False
+2025-06-16 21:59:44.287 | INFO     | __main__:test_use_cases:61 - Query: Can you provide the full list of current senior players for Barcelona men's team?
+ Response: I cannot help you with that. Please ask a question regarding Premier League teams.
+ Success: False
+2025-06-16 21:59:44.864 | INFO     | __main__:test_use_cases:61 - Query: List the current roster of senior players for Paris Saint-Germain men's football team.
+ Response: I cannot help you with that. Please ask a question regarding Premier League teams.
+ Success: False
+2025-06-16 21:59:45.443 | INFO     | __main__:test_use_cases:61 - Query: List the current roster of senior players for Real Madrid men's football team.
+ Response: I cannot help you with that. Please ask a question regarding Premier League teams.
+ Success: False
+2025-06-16 21:59:45.443 | INFO     | __main__:test_use_cases:65 - 
+
+Testing use cases... UNCLEAR_TEAMS_QUERIES
+2025-06-16 21:59:47.359 | INFO     | __main__:test_use_cases:69 - Query: What is the squad of Manchester?
+ Response: Possible clubs: [manchester united, manchester city]. Could you please confirm which one you mean?
+ Success: False
+2025-06-16 21:59:47.838 | INFO     | __main__:test_use_cases:69 - Query: What is the squad of Man?
+ Response: Sorry, I could not find the team you were asking about.
+ Success: False
+2025-06-16 21:59:49.770 | INFO     | __main__:test_use_cases:69 - Query: What is the squad of Crystal?
+ Response: I believe you mean: crystal palace. Can you please confirm?
+ Success: False
+2025-06-16 21:59:51.036 | INFO     | __main__:test_use_cases:69 - Query: What is the squad of Man City?
+ Response: I don't have information about that.
+ Success: True
+2025-06-16 21:59:54.597 | INFO     | __main__:test_use_cases:69 - Query: What is the squad of Brighton?
+ Response: I believe you mean: brighton and hove albion. Can you please confirm?
+ Success: False
+2025-06-16 21:59:56.041 | INFO     | __main__:test_use_cases:69 - Query: What is the squad of Manshesterr?
+ Response: Sorry, I could not find the team you were asking about.
+ Success: False
+2025-06-16 21:59:56.042 | INFO     | __main__:test_use_cases:74 - 
+
+Testing use cases... DIFFRENT_LANGUAGES_QUERIES, it require improving prompts to handle different languages
+2025-06-16 22:00:02.164 | INFO     | __main__:test_use_cases:77 - Query: Jaki jest skład Manchester United?
+ Response: Oto skład Manchester United:
+
+## Bramkarze
+- Tom Heaton (1986-04-15) – Bramkarz
+- André Onana (1996-04-02) – Bramkarz
+- Altay Bayındır (1998-04-14) – Bramkarz
+
+## Obrońcy
+- Jonny Evans (1988-01-03) – Środkowy obrońca
+- Luke Shaw (1995-07-12) – Lewy obrońca
+- Harry Maguire (1993-03-05) – Środkowy obrońca
+- Victor Lindelof (1994-07-17) – Środkowy obrońca
+- Diogo Dalot (1999-03-18) – Prawy obrońca
+- Matthijs de Ligt (1999-08-12) – Środkowy obrońca
+- Noussair Mazraoui (1997-11-14) – Prawy obrońca
+- Lisandro Martínez (1998-01-18) – Środkowy obrońca
+- Leny Yoro (2006-11-13) – Środkowy obrońca
+- Patrick Dorgu (2004-10-26) – Lewy obrońca
+- Ayden Heaven (2006-09-22) – Obrońca
+
+## Pomocnicy
+- Christian Eriksen (1992-02-14) – Ofensywny pomocnik
+- Casemiro (1992-02-23) – Defensywny pomocnik
+- Bruno Fernandes (1994-09-08) – Środkowy pomocnik
+- Mason Mount (1999-01-10) – Ofensywny pomocnik
+- Manuel Ugarte (2001-04-11) – Defensywny pomocnik
+- Kobbie Mainoo (2005-04-19) – Defensywny pomocnik
+
+## Napastnicy
+- Joshua Zirkzee (2001-05-22) – Środkowy napastnik
+- Matheus Cunha (1999-05-27) – Środkowy napastnik
+- Amad Diallo (2002-07-11) – Prawy skrzydłowy
+- Rasmus Højlund (2003-02-04) – Środkowy napastnik
+- Alejandro Garnacho (2004-07-01) – Lewy skrzydłowy
+
+## Trener
+- Ruben Amorim (1985-01-27)
+ Success: True
+2025-06-16 22:00:02.863 | INFO     | __main__:test_use_cases:77 - Query: Qual è il nome del Manchester United?
+ Response: I cannot help you with that. Please ask a question regarding Premier League teams.
+ Success: False
+2025-06-16 22:00:04.947 | INFO     | __main__:test_use_cases:77 - Query: Який склад Манчестер Юнайтед?
+ Response: I believe you mean: manchester united. Can you please confirm?
+ Success: False

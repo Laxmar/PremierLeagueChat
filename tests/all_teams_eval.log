@@ -1,0 +1,764 @@
+2025-06-16 22:08:05.690 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the wolverhampton wanderers men's team
+ Response: Here are the current senior squad members for the Wolverhampton Wanderers men's team, including their positions and birthdates:
+
+**Goalkeepers**
+- Tom King (1995-03-09) – Goalkeeper
+- Jose Sa (1993-01-17) – Goalkeeper
+- Daniel Bentley (1993-07-13) – Goalkeeper
+- Sam Johnstone (1993-03-25) – Goalkeeper
+- Josh Gracey (2007-12-14) – Goalkeeper
+
+**Defenders**
+- Craig Dawson (1990-05-06) – Centre-Back
+- Matt Doherty (1992-01-16) – Right-Back
+- Nélson Semedo (1993-11-16) – Right-Back
+- Santiago Sciutto (1998-11-09) – Centre-Back
+- Emmanuel Agbadou (1997-06-17) – Defender
+- Toti (1999-01-16) – Centre-Back
+- Yerson Mosquera (2001-05-02) – Defender
+- Ndemeni Meupiyou Menadjou (2006-03-19) – Defender
+- Yacouba Djiga (2002-11-15) – Defender
+- Pedro Lima (2006-07-01) – Defender
+
+**Midfielders**
+- Marshall Nyasha Munetsi (1996-06-22) – Central Midfield
+- Boubacar Traoré (2001-08-20) – Defensive Midfield
+- Jean-Ricner Bellegarde (1998-06-27) – Central Midfield
+- André (2001-07-16) – Defensive Midfield
+- João Gomes (2001-02-12) – Defensive Midfield
+- Tommy Doyle (2001-10-17) – Central Midfield
+
+**Forwards**
+- Goncalo Guedes (1996-11-29) – Left Wing
+- Pablo Sarabia (1992-05-11) – Right Winger
+- Hwang Hee-chan (1996-01-26) – Centre-Forward
+- Sasa Kalajdzic (1997-07-07) – Centre-Forward
+- Enso González (2005-01-20) – Left Wing
+- Carlos Forbs Borges (2004-03-19) – Left Wing
+
+**Others**
+- Rodrigo Gomes (2003-07-07) – Winger
+- Jørgen Strand Larsen (2000-02-06) – Forward
+
+**Manager**
+- Vítor Pereira (1968-07-26)
+ Success: True
+2025-06-16 22:08:10.356 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the fulham men's team
+ Response: Here are all the current senior squad members for the Fulham men's team:
+
+**Goalkeepers**
+- Bernd Leno (1992-03-04) - Goalkeeper
+- Steven Benda (1998-10-01) - Goalkeeper
+
+**Defenders**
+- Kenny Tete (1995-10-09) - Right-Back
+- Timothy Castagne (1995-11-05) - Right-Back
+- Joachim Andersen (1996-05-31) - Centre-Back
+- Antonee Robinson (1997-08-08) - Left-Back
+- Issa Diop (1997-01-09) - Centre-Back
+- Jorge Cuenca (1999-11-17) - Centre-Back
+- Calvin Bassey (1999-12-31) - Centre-Back
+
+**Midfielders**
+- Alex Iwobi (1996-05-03) - Attacking Midfield
+- Andreas Pereira (1996-01-01) - Attacking Midfield
+- Harrison Reed (1995-01-27) - Central Midfield
+- Tom Cairney (1991-01-20) - Central Midfield
+- Sasa Lukic (1996-08-13) - Central Midfield
+- Sander Berge (1998-02-14) - Defensive Midfield
+- Emil Smith Rowe (2000-07-28) - Attacking Midfield
+
+**Forwards**
+- Willian (1988-08-09) - Left Wing
+- Raúl Jiménez (1991-05-05) - Centre-Forward
+- Adama Traoré (1996-01-25) - Right Winger
+- Harry Wilson (1997-03-22) - Right Winger
+- Reiss Nelson (1999-12-10) - Right Winger
+- Carlos Vinícius (1995-03-25) - Centre-Forward
+- Rodrigo Muniz (2001-05-04) - Centre-Forward
+
+**Others**
+- Ryan Sessegnon (2000-05-18) - Left Midfield
+- Joshua King (2007-01-03) - Midfielder
+
+Manager: Marco Silva (1977-07-12)
+ Success: True
+2025-06-16 22:08:15.830 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the aston villa men's team
+ Response: Here are all the current senior squad members for the Aston Villa men's team:
+
+**Goalkeepers**
+- Emiliano Martinez (1992-09-02) - Goalkeeper
+- Robin Olsen (1990-01-08) - Goalkeeper
+
+**Defenders**
+- Tyrone Mings (1993-03-13) - Centre-Back
+- Kortney Hause (1995-07-16) - Centre-Back
+- Lucas Digne (1993-07-20) - Left-Back
+- Matty Cash (1997-08-07) - Right-Back
+- Ezri Konsa (1997-06-06) - Centre-Back
+- Axel Disasi (1998-03-11) - Centre-Back
+- Pau Torres (1997-01-16) - Centre-Back
+- Ian Maatsen (2002-03-10) - Left-Back
+- Lamare Bogarde (2004-01-05) - Defender
+- Andrés García (2003-02-07) - Right-Back
+
+**Midfielders**
+- Ross Barkley (1993-12-05) - Central Midfield
+- Youri Tielemans (1997-05-07) - Central Midfield
+- John McGinn (1994-10-18) - Central Midfield
+- Boubacar Kamara (1999-11-23) - Defensive Midfield
+- Jacob Ramsey (2001-05-28) - Central Midfield
+- Amadou Onana (2001-08-16) - Defensive Midfield
+
+**Forwards**
+- Ollie Watkins (1995-12-30) - Centre-Forward
+- Marco Asensio (1996-01-21) - Right Winger
+- Marcus Rashford (1997-10-31) - Left Wing
+- Donyell Malen (1999-01-19) - Right Winger
+- Leon Bailey (1997-08-09) - Left Wing
+- Morgan Rogers (2002-07-26) - Left Wing
+ Success: True
+2025-06-16 22:08:19.805 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the liverpool men's team
+ Response: Here are the current senior squad members for the Liverpool men's team:
+
+**Goalkeepers**
+- Alisson Becker (1992-10-02) - Goalkeeper
+- Vitezslav Jaros (2001-07-23) - Goalkeeper
+
+**Defenders**
+- Andrew Robertson (1994-03-11) - Left-Back
+- Virgil van Dijk (1991-07-08) - Centre-Back
+- Joe Gomez (1997-05-23) - Centre-Back
+- Ibrahima Konate (1999-05-25) - Centre-Back
+- Kostas Tsimikas (1996-05-12) - Left-Back
+- Jeremie Frimpong (2000-12-10) - Defender
+- Conor Bradley (2003-07-09) - Right-Back
+- Jarell Quansah (2003-01-29) - Centre-Back
+
+**Midfielders**
+- Curtis Jones (2001-01-30) - Central Midfield
+- Harvey Elliott (2003-04-04) - Attacking Midfield
+- Alexis Mac Allister (1998-12-24) - Central Midfield
+- Ryan Gravenberch (2002-05-16) - Central Midfield
+- Dominik Szoboszlai (2000-10-25) - Central Midfield
+- Wataru Endo (1993-02-09) - Defensive Midfield
+
+**Forwards**
+- Mohamed Salah (1992-06-15) - Right Winger
+- Diogo Jota (1996-12-04) - Left Wing
+- Cody Gakpo (1999-05-07) - Left Wing
+- Federico Chiesa (1997-10-25) - Left Wing
+- Luis Díaz (1997-01-13) - Left Wing
+- Darwin Núñez (1999-06-24) - Centre-Forward
+ Success: True
+2025-06-16 22:08:20.471 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the sunderland men's team
+ Response: I cannot help you with that. Please ask a question regarding Premier League teams.
+ Success: False
+2025-06-16 22:08:30.975 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the arsenal men's team
+ Response: Here are all the current senior squad members for the Arsenal men's team, including their positions and birthdates:
+
+**Goalkeepers**
+- Neto (1989-07-19) - Goalkeeper
+- David Raya (1995-09-15) - Goalkeeper
+
+**Defenders**
+- Oleksandr Zinchenko (1996-12-15) - Left-Back
+- Ben White (1997-11-08) - Right-Back
+- Takehiro Tomiyasu (1998-11-05) - Right-Back
+- Gabriel Magalhães (1997-12-19) - Centre-Back
+- William Saliba (2001-03-24) - Centre-Back
+- Jurrien Timber (2001-06-17) - Centre-Back
+- Riccardo Calafiori (2002-05-19) - Centre-Back
+- Jakub Kiwior (2000-02-15) - Centre-Back
+
+**Midfielders**
+- Martin Ødegaard (1998-12-17) - Attacking Midfield
+- Thomas Partey (1993-06-13) - Defensive Midfield
+- Declan Rice (1999-01-14) - Defensive Midfield
+- Mikel Merino (1996-06-22) - Central Midfield
+- Ethan Nwaneri (2007-03-21) - Attacking Midfield
+
+**Forwards**
+- Raheem Sterling (1994-12-08) - Left Wing
+- Leandro Trossard (1994-12-04) - Left Wing
+- Gabriel Jesus (1997-04-03) - Centre-Forward
+- Kai Havertz (1999-06-11) - Centre-Forward
+- Gabriel Martinelli (2001-06-18) - Left Wing
+- Bukayo Saka (2001-09-05) - Right Winger
+
+**Others**
+- Myles Lewis-Skelly (2006-09-26) - Midfielder
+
+Manager: Mikel Arteta (1982-03-26)
+ Success: True
+2025-06-16 22:08:36.647 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the chelsea men's team
+ Response: Here are the current senior squad members for the Chelsea men's team, including their positions and birthdates:
+
+**Goalkeepers**
+- Robert Sanchez (1997-11-18) – Goalkeeper
+- Filip Jörgensen (2002-04-16) – Goalkeeper
+- Lucas Bergström (2002-09-05) – Goalkeeper
+
+**Defenders**
+- Tosin Adarabioyo (1997-09-24) – Centre-Back
+- Benoit Badiashile (2001-03-26) – Centre-Back
+- Reece James (1999-12-08) – Right-Back
+- Marc Cucurella (1998-07-22) – Left-Back
+- Wesley Fofana (2000-12-17) – Centre-Back
+- Trevoh Chalobah (1999-07-05) – Centre-Back
+- Malo Gusto (2003-05-19) – Right-Back
+- Levi Colwill (2003-02-26) – Centre-Back
+- Mamadou Sarr (2005-08-29) – Defender
+- Josh Acheampong (2006-05-05) – Right-Back
+- Aarón Anselmino (2005-04-29) – Centre-Back
+
+**Midfielders**
+- Christopher Nkunku (1997-11-14) – Attacking Midfield
+- Kiernan Dewsbury-Hall (1998-09-06) – Central Midfield
+- Moisés Caicedo (2001-11-02) – Defensive Midfield
+- Dário Essugo (2005-03-14) – Defensive Midfield
+- Cole Palmer (2002-05-06) – Attacking Midfield
+- Roméo Lavia (2004-01-06) – Defensive Midfield
+- Enzo Fernández (2001-01-17) – Central Midfield
+
+**Forwards**
+- Pedro Neto (2000-03-09) – Right Winger
+- Noni Madueke (2002-03-10) – Right Winger
+- Liam Delap (2003-02-08) – Centre-Forward
+- Mykhailo Mudryk (2001-01-05) – Left Wing
+- Nicolas Jackson (2001-06-20) – Centre-Forward
+- Marc Guiu (2006-01-04) – Centre-Forward
+
+**Others**
+- Jadon Sancho (2000-03-25) – Left Midfield
+- Tyrique George (2006-02-04) – Attacker
+
+**Manager**
+- Enzo Maresca (1980-02-10)
+ Success: True
+2025-06-16 22:08:45.657 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the manchester united men's team
+ Response: Here are all the current senior squad members for the Manchester United men's team:
+
+**Goalkeepers**
+- Tom Heaton (1986-04-15) - Goalkeeper
+- André Onana (1996-04-02) - Goalkeeper
+- Altay Bayındır (1998-04-14) - Goalkeeper
+
+**Defenders**
+- Jonny Evans (1988-01-03) - Centre-Back
+- Luke Shaw (1995-07-12) - Left-Back
+- Harry Maguire (1993-03-05) - Centre-Back
+- Victor Lindelof (1994-07-17) - Centre-Back
+- Diogo Dalot (1999-03-18) - Right-Back
+- Matthijs de Ligt (1999-08-12) - Centre-Back
+- Noussair Mazraoui (1997-11-14) - Right-Back
+- Lisandro Martínez (1998-01-18) - Centre-Back
+- Leny Yoro (2006-11-13) - Centre-Back
+- Patrick Dorgu (2004-10-26) - Left-Back
+- Ayden Heaven (2006-09-22) - Defender
+
+**Midfielders**
+- Christian Eriksen (1992-02-14) - Attacking Midfield
+- Casemiro (1992-02-23) - Defensive Midfield
+- Bruno Fernandes (1994-09-08) - Central Midfield
+- Mason Mount (1999-01-10) - Attacking Midfield
+- Manuel Ugarte (2001-04-11) - Defensive Midfield
+- Kobbie Mainoo (2005-04-19) - Defensive Midfield
+
+**Forwards**
+- Joshua Zirkzee (2001-05-22) - Centre-Forward
+- Matheus Cunha (1999-05-27) - Centre-Forward
+- Amad Diallo (2002-07-11) - Right Winger
+- Rasmus Højlund (2003-02-04) - Centre-Forward
+- Alejandro Garnacho (2004-07-01) - Left Wing
+
+**Manager**
+- Ruben Amorim (1985-01-27)
+ Success: True
+2025-06-16 22:08:51.310 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the manchester city men's team
+ Response: Here are all the current senior squad members for the Manchester City men's team:
+
+**Goalkeepers**
+- Ederson (1993-08-17) - Goalkeeper
+- Scott Carson (1985-09-03) - Goalkeeper
+- Marcus Bettinelli (1992-05-24) - Goalkeeper
+- Stefan Ortega (1992-11-06) - Goalkeeper
+
+**Defenders**
+- Nathan Ake (1995-02-18) - Centre-Back
+- John Stones (1994-05-28) - Centre-Back
+- Manuel Akanji (1995-07-19) - Centre-Back
+- Ruben Dias (1997-05-14) - Centre-Back
+- Rayan Aït-Nouri (2001-06-06) - Left-Back
+- Joško Gvardiol (2002-01-23) - Centre-Back
+- Rico Lewis (2004-11-21) - Right-Back
+- Abduqodir Khusanov (2004-02-29) - Centre-Back
+- Vitor Reis (2006-01-12) - Defender
+
+**Midfielders**
+- Mateo Kovacic (1994-05-06) - Central Midfield
+- Bernardo Silva (1994-08-10) - Attacking Midfield
+- İlkay Gündoğan (1990-10-24) - Central Midfield
+- Rodri (1996-06-22) - Defensive Midfield
+- Tijjani Reijnders (1998-07-26) - Central Midfield
+- Rayan Cherki (2003-08-17) - Attacking Midfield
+- Matheus Nunes (1998-08-27) - Central Midfield
+- Nico González (2002-01-03) - Central Midfield
+- James McAtee (2002-10-18) - Central Midfield
+
+**Forwards**
+- Jack Grealish (1995-09-10) - Left Wing
+- Phil Foden (2000-05-28) - Left Wing
+- Erling Haaland (2000-07-21) - Centre-Forward
+- Jérémy Doku (2002-05-27) - Right Winger
+- Omar Marmoush (1999-02-07) - Left Wing
+- Savinho (2004-04-10) - Left Wing
+- Oscar Bobb (2003-07-12) - Right Winger
+
+**Manager**
+- Pep Guardiola (1971-01-18)
+ Success: True
+2025-06-16 22:08:58.599 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the everton men's team
+ Response: Here are all the current senior squad members for the Everton men's team:
+
+**Goalkeepers**
+- Asmir Begovic (1987-06-20) - Goalkeeper
+- Jordan Pickford (1994-03-07) - Goalkeeper
+- João Virginia (1999-10-10) - Goalkeeper
+
+**Defenders**
+- Ashley Young (1985-07-09) - Left-Back
+- Michael Keane (1993-01-11) - Centre-Back
+- Seamus Coleman (1988-10-11) - Right-Back
+- James Tarkowski (1992-11-19) - Centre-Back
+- Vitaliy Mykolenko (1999-05-29) - Left-Back
+- Jarrad Branthwaite (2002-06-27) - Centre-Back
+- Nathan Patterson (2001-10-16) - Right-Back
+- Jake O'Brien (2001-05-15) - Defender
+
+**Midfielders**
+- Idrissa Gueye (1989-09-26) - Central Midfield
+- Abdoulaye Doucoure (1993-01-01) - Central Midfield
+- James Garner (2001-03-13) - Defensive Midfield
+- Orel Mangala (1998-03-18) - Central Midfield
+- Tim Iroegbunam (2003-06-30) - Central Midfield
+- Carlos Alcaraz (2002-11-30) - Central Midfield
+- Jesper Grænge Lindstrøm (2000-02-29) - Midfielder
+- Iliman Ndiaye (2000-03-06) - Midfielder
+
+**Forwards**
+- Jack Harrison (1997-05-08) - Left Wing
+- Dominic Calvert-Lewin (1997-03-16) - Centre-Forward
+- Dwight McNeil (1999-11-22) - Left Wing
+- Armando Broja (2001-09-10) - Centre-Forward
+- Beto (1998-01-31) - Centre-Forward
+- Youssef Ramalho Chermiti (2004-05-24) - Centre-Forward
+ Success: True
+2025-06-16 22:09:04.287 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the tottenham hotspur men's team
+ Response: Here are all the current senior squad members for the Tottenham Hotspur men's team, including their positions and birthdates:
+
+**Goalkeepers**
+- Fraser Forster (1988-03-17) - Goalkeeper
+- Guglielmo Vicario (1996-10-07) - Goalkeeper
+- Brandon Austin (1999-01-07) - Goalkeeper
+- Alfie Whiteman (1998-10-02) - Goalkeeper
+- Antonín Kinský (2003-03-13) - Goalkeeper
+
+**Defenders**
+- Ben Davies (1993-04-24) - Left-Back
+- Sergio Reguilón (1996-12-16) - Left-Back
+- Cristian Romero (1998-04-27) - Centre-Back
+- Kevin Danso (1998-09-19) - Centre-Back
+- Pedro Porro (1999-09-13) - Right-Back
+- Djed Spence (2000-08-09) - Right-Back
+- Radu Drăgușin (2002-02-03) - Centre-Back
+- Destiny Udogie (2002-11-28) - Left-Back
+- Micky van de Ven (2001-04-19) - Centre-Back
+- Archie Gray (2006-03-12) - Right-Back
+
+**Midfielders**
+- James Maddison (1996-11-23) - Attacking Midfield
+- Rodrigo Bentancur (1997-06-05) - Central Midfield
+- Yves Bissouma (1996-08-30) - Central Midfield
+- Pape Matar Sarr (2002-09-14) - Central Midfield
+- Lucas Bergvall (2006-02-02) - Central Midfield
+
+**Forwards**
+- Dominic Solanke (1997-09-14) - Centre-Forward
+- Heung-Min Son (1992-07-08) - Left Wing
+- Richarlison (1997-05-10) - Centre-Forward
+- Dejan Kulusevski (2000-04-25) - Right Winger
+- Brennan Johnson (2001-05-23) - Right Winger
+- Dane Scarlett (2004-03-24) - Centre-Forward
+- Wilson Odobert (2004-11-28) - Right Winger
+
+**Others**
+- Timo Werner (1996-03-06) - Forward
+- Mathys Tel (2005-04-27) - Forward
+
+**Manager**
+- Thomas Frank (1973-10-09)
+ Success: True
+2025-06-16 22:09:09.785 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the brighton and hove albion men's team
+ Response: Here are the current senior squad members for the Brighton & Hove Albion men's team:
+
+**Goalkeepers**
+- Jason Steele (1990-08-18) - Goalkeeper
+- Bart Verbruggen (2002-08-18) - Goalkeeper
+
+**Defenders**
+- Joel Veltman (1992-01-15) - Right-Back
+- Lewis Dunk (1991-11-21) - Centre-Back
+- Adam Webster (1995-01-04) - Centre-Back
+- Igor Julio (1998-02-07) - Centre-Back
+- Tariq Lamptey (2000-09-30) - Right-Back
+- Pervis Estupiñán (1998-01-21) - Left-Back
+- Ferdi Kadıoğlu (1999-10-07) - Left-Back
+- Jan Paul van Hecke (2000-06-08) - Centre-Back
+
+**Midfielders**
+- James Milner (1986-01-04) - Central Midfield
+- Matt O'Riley (2000-11-21) - Central Midfield
+- Carlos Baleba (2004-01-03) - Defensive Midfield
+- Yasin Ayari (2003-10-06) - Central Midfield
+- Mats Wieffer (1999-11-16) - Defensive Midfield
+- Diego Gómez (2003-03-27) - Central Midfield
+
+**Forwards**
+- Danny Welbeck (1990-11-26) - Centre-Forward
+- Solly March (1994-07-20) - Right Winger
+- João Pedro (2001-09-26) - Centre-Forward
+- Georginio Rutter (2002-04-20) - Centre-Forward
+- Kaoru Mitoma (1997-05-20) - Left Wing
+- Simon Adingra (2002-01-01) - Left Wing
+- Yankuba Minteh (2004-07-22) - Right Winger
+
+**Others**
+- Eiran Cashin (2001-11-09) - Midfielder
+- Brajan Gruda (2004-05-31) - Midfielder
+- Jack Hinshelwood (2005-04-11) - Midfielder
+
+**Manager**
+- Fabian Hürzeler (1993-02-26)
+ Success: True
+2025-06-16 22:09:15.656 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the burnley men's team
+ Response: Here are all the current senior squad members for the Burnley men's team, including their positions and birthdates:
+
+**Goalkeepers**
+- James Trafford (2002-10-10) - Goalkeeper
+- Etienne Green (2000-07-19) - Goalkeeper
+- Václav Hladký (1990-11-14) - Goalkeeper
+
+**Defenders**
+- Connor Roberts (1996-07-30) - Right-Back
+- Joe Worrall (1997-01-10) - Centre-Back
+- Louis Beyer (2000-05-19) - Centre-Back
+- Conrad Egan-Riley (2003-01-02) - Right-Back
+- Bashir Humphreys (2003-03-15) - Centre-Back
+- Shurandy Ruggerio Sambo (2001-08-19) - Right-Back
+- Lucas Pires (2001-03-24) - Left-Back
+- Oliver Sonne (2000-11-10) - Right-Back
+
+**Midfielders**
+- Jonjo Shelvey (1992-02-27) - Central Midfield
+- Josh Brownhill (1995-12-19) - Central Midfield
+- Josh Cullen (1996-04-07) - Central Midfield
+- Marcus Edwards (1998-12-03) - Attacking Midfield
+- Jeremy Sarmiento (2002-06-16) - Attacking Midfield
+- Hannibal Mejbri (2003-01-21) - Attacking Midfield
+- Aaron Ramsey (2003-01-21) - Attacking Midfield
+- Josh Laurent (1995-05-06) - Midfielder
+- Zian Flemming (1998-08-01) - Midfielder
+- Maxime Esteve (2002-05-26) - Midfielder
+
+**Forwards**
+- Ashley Barnes (1989-10-30) - Centre-Forward
+- Nathan Redmond (1994-03-06) - Right Winger
+- Mike Ndayishimiye (1999-05-28) - Left Wing
+- Benson Hedilazio (1997-03-28) - Right Winger
+- Jaidon Anthony (1999-12-01) - Left Wing
+- Lyle Foster (2000-09-03) - Centre-Forward
+- Luca Koleosho (2004-09-15) - Right Winger
+- Enock Atta Agyei (2005-01-13) - Right Winger
+- Jaydon Banel (2004-10-19) - Left Wing
+
+**Manager**
+- Scott Parker (1980-10-13)
+ Success: True
+2025-06-16 22:09:21.010 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the crystal palace men's team
+ Response: Here are all the current senior squad members for the Crystal Palace men's team:
+
+**Goalkeepers**
+- Remi Matthews (1994-02-10) - Goalkeeper
+- Dean Henderson (1997-03-12) - Goalkeeper
+- Matt Turner (1994-06-24) - Goalkeeper
+
+**Defenders**
+- Joel Ward (1989-10-29) - Right-Back
+- Nathaniel Clyne (1991-04-05) - Right-Back
+- Ben Chilwell (1996-12-21) - Left-Back
+- Tyrick Mitchell (1999-09-01) - Left-Back
+- Maxence Lacroix (2000-04-06) - Centre-Back
+- Chris Richards (2000-03-28) - Centre-Back
+- Marc Guéhi (2000-07-13) - Centre-Back
+- Daniel Muñoz (1996-05-25) - Right-Back
+- Chadi Riad (2003-06-17) - Centre-Back
+- Caleb Kporha (2006-07-15) - Defender
+
+**Midfielders**
+- Will Hughes (1995-04-17) - Central Midfield
+- Jefferson Lerma (1994-10-25) - Defensive Midfield
+- Eberechi Eze (1998-06-29) - Attacking Midfield
+- Cheick Doucouré (2000-01-08) - Defensive Midfield
+- Adam Wharton (2004-06-02) - Central Midfield
+- Matheus França (2004-04-01) - Attacking Midfield
+- Daichi Kamada (1996-08-05) - Midfielder
+- Romain Esse (2005-05-13) - Midfielder
+- Justin Devenny (2003-10-11) - Midfielder
+
+**Forwards**
+- Ismaïla Sarr (1998-02-25) - Left Wing
+- Jean-Philippe Mateta (1997-06-28) - Centre-Forward
+- Eddie Nketiah (1999-05-30) - Centre-Forward
+ Success: True
+2025-06-16 22:09:25.873 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the leeds united men's team
+ Response: Here are the current senior squad members for the Leeds United men's team:
+
+**Goalkeepers**
+- Karl Darlow (1990-10-08) - Goalkeeper
+- Alex Cairns (1993-01-04) - Goalkeeper
+- Illan Meslier (2000-03-02) - Goalkeeper
+
+**Defenders**
+- Sam Byram (1993-09-16) - Left-Back
+- Joe Rodon (1997-10-22) - Centre-Back
+- Junior Firpo (1996-08-22) - Left-Back
+- Maximilian Wöber (1998-02-04) - Centre-Back
+- Pascal Struijk (1999-08-11) - Centre-Back
+- Jayden Bogle (2000-07-27) - Right-Back
+- Isaac Schmidt (1999-12-07) - Defender
+
+**Midfielders**
+- Josua Guilavogui (1990-09-19) - Defensive Midfield
+- Joe Rothwell (1995-01-11) - Central Midfield
+- Ethan Ampadu (2000-09-14) - Defensive Midfield
+- Brenden Aaronson (2000-10-22) - Attacking Midfield
+- Ilia Gruev (2000-05-06) - Defensive Midfield
+- Ao Tanaka (1998-09-10) - Midfielder
+
+**Forwards**
+- Patrick Bamford (1993-09-05) - Centre-Forward
+- Daniel James (1997-11-10) - Left Wing
+- Manor Solomon (1999-07-24) - Left Wing
+- Joël Piroe (1999-08-02) - Centre-Forward
+- Degnand Gnonto (2003-11-05) - Left Wing
+- Largie Ramazani (2001-02-27) - Left Wing
+- Mateo Joseph (2003-10-19) - Centre-Forward
+
+**Manager**
+- Daniel Farke (1976-10-30)
+ Success: True
+2025-06-16 22:09:32.917 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the west ham united men's team
+ Response: Here are the current senior squad members:
+
+**Goalkeepers**
+- Lukasz Fabianski (Goalkeeper) – 1985-04-18
+- Alphonse Areola (Goalkeeper) – 1993-02-27
+- Wes Foderingham (Goalkeeper) – 1991-01-14
+
+**Defenders**
+- Aaron Cresswell (Left-Back) – 1989-12-15
+- Konstantinos Mavropanos (Centre-Back) – 1997-12-11
+- Emerson Palmieri (Left-Back) – 1994-08-03
+- Jean-Clair Todibo (Centre-Back) – 1999-12-30
+- Aaron Wan-Bissaka (Right-Back) – 1997-06-26
+- Max Kilman (Centre-Back) – 1997-05-23
+- Vladimír Coufal (Right-Back) – 1992-08-22
+
+**Midfielders**
+- James Ward-Prowse (Central Midfield) – 1994-11-01
+- Carlos Soler (Central Midfield) – 1997-01-02
+- Lucas Paquetá (Attacking Midfield) – 1997-08-27
+- Edson Álvarez (Defensive Midfield) – 1997-10-24
+- Tomáš Souček (Defensive Midfield) – 1995-02-27
+- Guido Rodríguez (Defensive Midfield) – 1994-04-12
+- Mohammed Kudus (Attacking Midfield) – 2000-08-02
+- Andy Irving (Central Midfield) – 2000-05-13
+
+**Forwards**
+- Jarrod Bowen (Right Winger) – 1996-12-20
+- Danny Ings (Centre-Forward) – 1992-03-16
+- Michail Antonio (Centre-Forward) – 1990-03-28
+- Crysencio Summerville (Right Winger) – 2001-10-30
+- Evan Ferguson (Centre-Forward) – 2004-10-19
+
+**Others**
+- Niclas Fullkrug (Forward) – 1993-02-09
+- Luis Guilherme (Midfielder) – 2006-02-09
+
+**Manager**
+- Graham Potter – 1975-05-20
+ Success: True
+2025-06-16 22:09:46.196 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the nottingham forest men's team
+ Response: Here are the current senior squad members for the Nottingham Forest men's team:
+
+**Goalkeepers**
+- Wayne Hennessey (1987-01-24) - Goalkeeper
+- Matz Sels (1992-02-26) - Goalkeeper
+- Carlos Miguel (1998-10-09) - Goalkeeper
+
+**Defenders**
+- Willy Boly (1991-02-03) - Centre-Back
+- Harry Toffolo (1995-08-19) - Left-Back
+- Ola Aina (1996-10-08) - Right-Back
+- Nikola Milenković (1997-10-12) - Centre-Back
+- Neco Williams (2001-04-13) - Right-Back
+- Álex Moreno (1993-06-08) - Left-Back
+- Morato (2001-06-30) - Defender
+- Murillo (2002-07-04) - Centre-Back
+- Zach Abbott (2006-05-13) - Defender
+
+**Midfielders**
+- Nicolás Domínguez (1998-06-28) - Central Midfield
+- Morgan Gibbs-White (2000-01-27) - Attacking Midfield
+- Ibrahim Sangaré (1997-12-02) - Defensive Midfield
+- Ryan Yates (1997-11-21) - Central Midfield
+- Danilo (2001-04-19) - Central Midfield
+- Elliott Anderson (2002-11-06) - Central Midfield
+
+**Forwards**
+- Chris Wood (1991-12-07) - Centre-Forward
+- Taiwo Awoniyi (1997-08-12) - Centre-Forward
+- Callum Hudson-Odoi (2000-11-07) - Left Wing
+- Anthony Elanga (2002-04-27) - Left Wing
+
+**Others**
+- Jota Silva (1999-08-01) - Attacker
+- Ramón Sosa (1999-08-31) - Midfielder
+- Eric da Silva Moreira (2006-05-03) - Attacker
+
+**Manager**
+- Nuno Espírito Santo (1974-01-25)
+ Success: True
+2025-06-16 22:09:53.399 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the bournemouth men's team
+ Response: Here are the current senior squad members for the Bournemouth men's team:
+
+**Goalkeepers**
+- Kepa Arrizabalaga (1994-10-03) – Goalkeeper
+- William Dennis (2000-07-10) – Goalkeeper
+
+**Defenders**
+- Adam Smith (1991-04-29) – Right-Back
+- Marcos Senesi (1997-05-10) – Centre-Back
+- Ilya Zabarnyi (2002-09-01) – Centre-Back
+- James Hill (2002-01-10) – Centre-Back
+- Julián Araujo (2001-08-13) – Right-Back
+- Milos Kerkez (2003-11-07) – Left-Back
+- Matai Akinmboni (2006-10-17) – Defender
+- Julio Soler (2005-02-16) – Left-Back
+
+**Midfielders**
+- Lewis Cook (1997-02-03) – Central Midfield
+- Ryan Christie (1995-04-28) – Attacking Midfield
+- Alex Scott (2003-08-21) – Central Midfield
+
+**Forwards**
+- David Brooks (1997-07-08) – Right Winger
+- Justin Kluivert (1999-05-05) – Left Wing
+- Antoine Semenyo (2000-01-07) – Centre-Forward
+- Luis Sinisterra (1999-06-17) – Left Wing
+- Evanilson (1999-10-06) – Centre-Forward
+- Daniel Jebbison (2003-07-11) – Centre-Forward
+- Dango Ouattara (2002-02-11) – Right Winger
+- Eli Junior Kroupi (2006-06-23) – Centre-Forward
+
+**Others**
+- Enes Unal (1997-05-10) – Forward
+- Tyler Adams (1999-02-14) – Defensive Lineman
+- Marcus Tavernier (1999-03-22) – Left Midfield
+- Ben Winterburn (2004-09-04) – Midfielder
+
+**Manager**
+- Andoni Iraola (1982-06-22)
+ Success: True
+2025-06-16 22:10:03.826 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the brentford men's team
+ Response: Here are all the current senior squad members for the Brentford men's team, including their positions and birthdates:
+
+**Goalkeepers**
+- Caoimhín Kelleher (1998-11-23) - Goalkeeper
+- Hákon Rafn Valdimarsson (2001-10-13) - Goalkeeper
+
+**Defenders**
+- Ben Mee (1989-09-21) - Centre-Back
+- Rico Henry (1997-07-08) - Left-Back
+- Ethan Pinnock (1993-05-29) - Centre-Back
+- Kristoffer Ajer (1998-04-17) - Centre-Back
+- Sepp van den Berg (2001-12-20) - Centre-Back
+- Aaron Hickey (2002-06-10) - Right-Back
+- Nathan Michael Collins (2001-04-30) - Centre-Back
+- Michael Kayode (2004-07-10) - Defender
+- Ji-Soo Kim (2004-12-24) - Defender
+
+**Midfielders**
+- Christian Nørgaard (1994-03-10) - Defensive Midfield
+- Joshua Dasilva (1998-10-23) - Central Midfield
+- Mathias Jensen (1996-01-01) - Central Midfield
+- Vitaly Janelt (1998-05-10) - Defensive Midfield
+- Fabio Carvalho (2002-08-30) - Attacking Midfield
+- Yehor Yarmolyuk (2004-03-01) - Attacking Midfield
+
+**Forwards**
+- Mikkel Damsgaard (2000-07-03) - Left Wing
+- Yoane Wissa (1996-09-03) - Left Wing
+- Bryan Mbeumo (1999-08-07) - Right Winger
+- Keane Lewis-Potter (2001-02-22) - Left Wing
+- Kevin Schade (2001-11-27) - Right Winger
+
+**Others**
+- Edmond-Paris Maghoma (2001-05-08) - Midfielder
+- Yunus Konak (2006-01-10) - Midfielder
+- Romelle Donovan (2006-11-30) - Midfielder
+- Gustavo Nunes Fernandes Gomes (2005-11-20) - Attacker
+- Igor Thiago (2001-06-26) - Forward
+ Success: True
+2025-06-16 22:10:10.613 | INFO     | __main__:evaluate_all_teams:29 - Query: Please list all the current senior squad members for the newcastle united men's team
+ Response: Here are all the current senior squad members for the Newcastle United men's team:
+
+**Goalkeepers**
+- John Ruddy (Goalkeeper) – 1986-10-24
+- Nick Pope (Goalkeeper) – 1992-04-19
+- Martin Dubravka (Goalkeeper) – 1989-01-15
+- Odisseas Vlachodimos (Goalkeeper) – 1994-04-26
+- Mark Gillespie (Goalkeeper) – 1992-03-27
+
+**Defenders**
+- Matt Targett (Left-Back) – 1995-09-18
+- Kieran Trippier (Right-Back) – 1990-09-19
+- Jamaal Lascelles (Centre-Back) – 1993-11-11
+- Dan Burn (Left-Back) – 1992-05-09
+- Fabian Schär (Centre-Back) – 1991-12-20
+- Jamal Lewis (Left-Back) – 1998-01-25
+- Emil Krafth (Right-Back) – 1994-08-02
+- Sven Botman (Centre-Back) – 2000-01-12
+- Valentino Livramento (Right-Back) – 2002-11-12
+- Lewis Hall (Left-Back) – 2004-09-08
+
+**Midfielders**
+- Sean Longstaff (Central Midfield) – 1997-10-30
+- Joelinton (Central Midfield) – 1996-08-14
+- Sandro Tonali (Defensive Midfield) – 2000-05-18
+- Joe Willock (Central Midfield) – 1999-08-20
+- Bruno Guimarães (Defensive Midfield) – 1997-11-16
+- Lewis Miley (Central Midfield) – 2006-05-01
+
+**Forwards**
+- Jacob Murphy (Right Winger) – 1995-02-24
+- Callum Wilson (Centre-Forward) – 1992-02-27
+- Harvey Barnes (Left Wing) – 1997-12-09
+- Alexander Isak (Centre-Forward) – 1999-09-21
+- Anthony Gordon (Left Wing) – 2001-02-24
+- William Daugaard Osula (Centre-Forward) – 2003-08-04
+
+**Manager**
+- Eddie Howe – 1977-11-29
+ Success: True

@@ -21,6 +21,7 @@ from src.backend.squad import Squad
 # TODO consider using UpdateCommands instead of returning AgentState
 @dataclass(kw_only=True)
 class AgentState:
+    """ Agent state """
     user_query: HumanMessage # TODO use plain string to avoid multiple casting
     team_name: str | None = None
     squad: Squad | None = None
@@ -30,9 +31,10 @@ class AgentState:
     team_found: bool = False
     valid: bool = False
     success: bool = False
+    """ set to True if the team was found and the answer was formulated """
 
 
-# TODO Replace hardcoded Nodes and Edges names with constants/enums
+# TODO Replace hardcoded Nodes and Edges names and messages with constants/enums
 # TODO consider creating Nodes class and moving prompts to this classes
 class PremierLeagueAgent:
     """A class which implements a logic of responding to user queries about Premier League teams squads."""
@@ -45,7 +47,7 @@ class PremierLeagueAgent:
             model_name: name of the OpenAI model to use
             squad_api: squad API to use
         """
-        self._model = ChatOpenAI(model=model_name)
+        self._model = ChatOpenAI(model=model_name, temperature=0.1)
         self._squad_api = squad_api
         self._config: RunnableConfig = {"configurable": {"thread_id": str(randint(0, 1000))}} 
         graph = StateGraph(AgentState)
@@ -91,7 +93,7 @@ class PremierLeagueAgent:
         
         self._graph = graph.compile(checkpointer=memory, interrupt_before=['UserClarify'])
        
-    async def send_message(self, user_message: HumanMessage) -> str:
+    async def send_message(self, user_message: HumanMessage) -> tuple[str, AgentState]:
         """
         Send a message to the agent and return the agent response.
         The response can be either final answer or clarification request.
@@ -100,7 +102,8 @@ class PremierLeagueAgent:
             user_message: user message
         
         Returns:
-            str: final answer or clarification request   
+            tuple[str, AgentState]: final answer or clarification request and agent state, 
+                the agent state is used only during evaluation
         """
         logger.debug(f'user_message: {user_message}')
         
@@ -112,18 +115,18 @@ class PremierLeagueAgent:
         if clarification_needed:
             self._graph.update_state(self._config, {"clarification_response": user_message.content})
             result = await self._graph.ainvoke(Command(resume=user_message.content), config=self._config)
-            answer = AgentState(**result).answer
-            logger.debug(f'answer: {answer}')
-            return cast(str, answer)
+            result = AgentState(**result)
+            logger.debug(f'answer: {result.answer}')
+            return cast(str, result.answer), result
         
         # Handle the normal Flow
         result = await self._invoke(user_message)
         logger.debug(f'result: {result}')
         if result.clarification_request:
-            return result.clarification_request
+            return result.clarification_request, result
         
         logger.debug(f'answer: {result.answer}')
-        return cast(str, result.answer)
+        return cast(str, result.answer), result
 
     def save_graph_as_image(self, name: str = "graph.png"):
         """Save graph as image """
@@ -154,11 +157,15 @@ class PremierLeagueAgent:
             AgentState: agent state with valid flag
         """
         query = state.user_query.content
-        system_prompt = """
-        Determine if user is asking about a Premier League team squad.
-        Answer only YES or NO.
+        teams = self._squad_api.get_teams()
+        VALIDATE_PROMPT_TEMPALTE = """
+            Having a list of teams: {teams}
+            Determine if user is asking about a Premier League team squad.
+            User Query: {query}
+            Answer only YES or NO.
         """
-        response = self._model.invoke(f"{system_prompt}\nUser Query: {query}")
+        prompt = VALIDATE_PROMPT_TEMPALTE.format(teams=teams, query=query)
+        response = self._model.invoke(prompt)
         logger.debug(f'response: {response.content}')
         
         if "yes" in cast(str, response.content).lower():
@@ -170,7 +177,7 @@ class PremierLeagueAgent:
 
     async def _extract_team(self, state: AgentState) -> AgentState:
         """It tries to extract the team name from the user query.
-        If the team is not found, it returns None.
+        If the team is not found, it sets team_found to False.
         
         Args:
             state: agent state
@@ -180,6 +187,7 @@ class PremierLeagueAgent:
         """
         query = state.user_query.content
         
+        # TODO imrpove using team list and better prompt
         system_prompt = """
         Extract the team names from user query if any.
         Just output the team name, no extra words.
@@ -243,7 +251,7 @@ class PremierLeagueAgent:
             raise ValueError('Something went wrong. The team name should be set in this node.')
         
         squad = await self._squad_api.get_team_squad(state.team_name)
-        logger.debug(f'squad: {squad}')
+        logger.trace(f'squad: {squad}')
         state.squad = squad
         return state
     

@@ -19,6 +19,7 @@ class SportDBApi(IPremierLeagueApi):
     # https://www.thesportsdb.com/api/v2/json/search/league/english_premier_league
     # Premier League ID: 4328
     # Get Teams: https://www.thesportsdb.com/api/v2/json/list/teams/4328
+    # TODO implement dynamic fetching of teams
     """Cached Premier League teams to IDs"""
     _PREMIERE_LEAGUE_TEAMS_TO_ID = {
         "wolverhampton wanderers": "133599",
@@ -126,4 +127,3 @@ class SportDBApi(IPremierLeagueApi):
             raise APIError(msg)
         
         return response.json()
-    

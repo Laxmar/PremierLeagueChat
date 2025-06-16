@@ -1,0 +1,25 @@
+query,clarification_request,success
+Pease list all the current senior squad members for the Manchester United men's team,,True
+Can you provide the full list of current senior players for Manchester United men's team?,,True
+Please show me the current Manchester United men's first team squad.,,True
+I'd like to see all the players currently in the senior squad for Manchester City men's side.,,True
+List the current roster of senior players for Liverpool men's football team.,,True
+Who are the current members of Manchester United's men's senior squad?,,True
+What is the weather in Warsaw?,,False
+What is the population of Warsaw?,,False
+How are you?,,False
+What is the capital of France?,,False
+My name is John.,,False
+Please tell me the squad of the Chico Bulls,,False
+Can you provide the full list of current senior players for Barcelona men's team?,,False
+List the current roster of senior players for Paris Saint-Germain men's football team.,,False
+List the current roster of senior players for Real Madrid men's football team.,,False
+What is the squad of Manchester?,"Possible clubs: [manchester united, manchester city]. Could you please confirm which one you mean?",False
+What is the squad of Man?,"Possible clubs: [manchester united, manchester city]. Could you please confirm which one you mean?",False
+What is the squad of Crystal?,I believe you mean: crystal palace. Can you please confirm?,False
+What is the squad of Man City?,I believe you mean: crystal palace. Can you please confirm?,True
+What is the squad of Brighton?,I believe you mean: brighton and hove albion. Can you please confirm?,False
+What is the squad of Manshesterr?,I believe you mean: brighton and hove albion. Can you please confirm?,False
+Jaki jest skład Manchester United?,,True
+Qual è il nome del Manchester United?,,False
+Який склад Манчестер Юнайтед?,I believe you mean: manchester united. Can you please confirm?,False

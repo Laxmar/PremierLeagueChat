@@ -9,7 +9,6 @@ BASE_USER_QUERIES = [
     "Who are the current members of Manchester United's men's senior squad?"
 ]
 
-
 IRRELEVANT_USER_QUERIES = [
     "What is the weather in Warsaw?",
     "What is the population of Warsaw?",
@@ -36,5 +35,13 @@ UNCLEAR_TEAMS_QUERIES = [
     "What is the squad of Crystal?",
     "What is the squad of Man City?",
     "What is the squad of Brighton?",
-    "What is the squad of Menchessster?"
+    "What is the squad of Manshesterr?"
 ]
+
+DIFFRENT_LANGUAGES_QUERIES = [
+    "Jaki jest skład Manchester United?",
+    "Qual è il nome del Manchester United?",
+    "Який склад Манчестер Юнайтед?"
+]
+
+EVALUATION_QUERIES = BASE_USER_QUERIES + IRRELEVANT_USER_QUERIES + NOT_PREMIER_LEAGUE_TEAMS_QUERIES + PRECISE_USER_QUERIES + UNCLEAR_TEAMS_QUERIES + DIFFRENT_LANGUAGES_QUERIES

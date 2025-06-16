@@ -54,7 +54,7 @@ class ChatUI:
                 with st.spinner("Assitant is searching for the squad..."):
                     response = ""
                     try:
-                        response = await st.session_state.agent.send_message(message)
+                        response, _ = await st.session_state.agent.send_message(message)
                     except APIError:
                         response = "Sorry, I cannot connect to the API. Please try again later."
                     finally:

@@ -35,11 +35,16 @@ source activate_env.fish
 streamlit run src/frontend/app.py
 ```
 
-## Run the use cases test
+## Evaluation
 
 ```bash
-python -m tests.test_use_cases
+python -m tests.evaluation
 ```
+
+```bash
+python -m test.evaluate_all_teams
+```
+
 
 # Development & Contribution
 
@@ -51,17 +56,21 @@ poetry add <package_name>
 ## Tech stack
 
 - Python 3.12
-- Poetry
-- Pytest
-- Pyright
-- Langchain
-- Langgraph
+- Langgraph & Langchain
 - Streamlit
-- Loguru
+- Poetry
 - OpenAI API
 - [TheSportDB API](https://www.thesportsdb.com/)
+- Pytest
+- Loguru
+- Pyright (currently on IDE, and manually)
+- Ruff (currently on IDE, and manually)
 
 
-## Docs - TODO
+## Tasks Board
 
-- in docs/ directory 
+https://github.com/users/Laxmar/projects/1/views/1
+
+## Docs 
+
+Read the docs/Premier League Chat - Proof of Concept - Documentation.pdf for more information.

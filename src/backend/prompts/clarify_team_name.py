@@ -10,9 +10,10 @@ The user has entered the following message:
 "{user_prompt}"
 
 Your task:
-- Analyze the user input and try to match it to the most likely club(s) from the provided list.
+- Analyze the user input and try to extract the football club name 
 - Consider possible typos, abbreviations, nicknames, or partial names.
 - Use fuzzy matching and common knowledge to interpret ambiguous or imprecise input.
+- Match the extracted name to the most likely club(s) from the provided list.
 - Only return club names that exactly match the names from the provided list.
 - Do not invent club names.
 
@@ -24,5 +25,5 @@ Output format:
 - If no match is found:  
   "I'm sorry, I couldn't find a matching club. Could you please clarify?"
 
-Be strict about using only the provided club list.
 """)
+# Be strict about using only the provided club list.

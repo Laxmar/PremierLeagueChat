@@ -2,6 +2,7 @@
 config.yaml
 setup_env_key.fish
 _experimental/
+!tests/evaluation.log
 
 .vscode/
 tmp/
