@@ -13,8 +13,8 @@ from src.utils.logger import setup_logger
 # NOTE: With current settings it doesn't work for sunderland - TODO improve
 async def evaluate_all_teams(use_local_api: bool = True) -> None:
     config = Configuration.load()
-    config.logging_level = "INFO" # 'DEBUG
-    setup_logger(config.logging_level, Path("tests/all_teams_eval.log"))
+    config.LOGGING_LEVEL = "INFO" # 'DEBUG
+    setup_logger(config.LOGGING_LEVEL, Path("tests/all_teams_eval.log"))
     
     if use_local_api:
         squad_api = LocalPremierLeagueApi(json_path="tests/data/squads.json")

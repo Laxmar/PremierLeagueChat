@@ -29,8 +29,8 @@ def save_results(results: list[TestResult], filename: str = "tests/evaluation_re
 # TODO consider using pytest
 async def test_use_cases(should_save_results: bool = False, use_local_api: bool = True):
     config = Configuration.load()
-    config.logging_level = "INFO" # 'DEBUG
-    setup_logger(config.logging_level, Path("tests/evaluation.log"))
+    config.LOGGING_LEVEL = "INFO" # 'DEBUG
+    setup_logger(config.LOGGING_LEVEL, Path("tests/evaluation.log"))
     
     if use_local_api:
         squad_api = LocalPremierLeagueApi(json_path="tests/data/squads.json")
