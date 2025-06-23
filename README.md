@@ -78,3 +78,4 @@ Read the docs/Premier League Chat - Proof of Concept - Documentation.pdf for mor
 ## Deployment
 
 App is currently deployed using https://streamlit.io/cloud. Before the deployment, you need to set environment variables in the Streamlit Cloud console. The app is automatically deployed when you push to the main branch.
+The app is private and can be accessed only by invited users. 
