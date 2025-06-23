@@ -12,7 +12,7 @@ def setup_logger(level: str = "INFO", file_path: Path | None = None) -> None:
         file_path: The path to the log file. If None, logging to file is disabled.
     """
     logger.remove() 
-    logger.add(sys.stdout, level=level)
+    logger.add(sys.stdout, level=level.upper())
     if file_path:
         file_path.parent.mkdir(exist_ok=True)
-        logger.add(file_path, level=level)
+        logger.add(file_path, level=level.upper())
