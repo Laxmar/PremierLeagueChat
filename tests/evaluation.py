@@ -37,7 +37,7 @@ async def test_use_cases(should_save_results: bool = False, use_local_api: bool 
     else:
         squad_api = SportDBApi(config.THE_SPORT_API_KEY.get_secret_value())
         
-    agent = PremierLeagueAgent(config.model_name, squad_api)
+    agent = PremierLeagueAgent(config.MODEL_NAME, squad_api)
     results = []
     
     logger.info("\n\nTesting use cases... BASE_USER_QUERIES")

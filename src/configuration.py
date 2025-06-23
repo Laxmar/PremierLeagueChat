@@ -9,11 +9,11 @@ DEFUALT_CONFIG_PATH = "config.yaml"
 class Configuration(BaseModel):
     """Application configuration Check example_config.yaml"""
     
-    model_name: str = "gpt-4.1"
+    MODEL_NAME: str = "gpt-4.1"
     """https://platform.openai.com/docs/models/overview"""
-    logging_level: str = "info"
+    LOGGING_LEVEL: str = "info"
     """ avaible levels: trace, debug, info, success, warning, error, critical"""
-    langraph_debug: bool = False
+    LANGRAPH_DEBUG: bool = False
     """ enable langgraph debug"""
     
     OPENAI_API_KEY: SecretStr
@@ -35,6 +35,18 @@ class Configuration(BaseModel):
             Configuration: loaded configuration
         """
         logger.debug(f'Loading configuration from {path}')
-        with open(path, "r") as f:
-            return cls(**yaml.safe_load(f))
+        
+        try:
+            with open(path, "r") as f:
+                return cls(**yaml.safe_load(f))
+        except Exception as e:
+            logger.warning(f"Failed to load config from {path}: {e}. Loading from environment variables.")
+            env_vars = {
+                "MODEL_NAME": os.getenv("MODEL_NAME", "gpt-4.1"),
+                "LOGGING_LEVEL": os.getenv("LOGGING_LEVEL", "info"),
+                "LANGRAPH_DEBUG": os.getenv("LANGRAPH_DEBUG", "False") in ("True", "true", "1"),
+                "OPENAI_API_KEY": os.getenv("OPENAI_API_KEY"),
+                "THE_SPORT_API_KEY": os.getenv("THE_SPORT_API_KEY"),
+            }
+            return cls(**env_vars)
     

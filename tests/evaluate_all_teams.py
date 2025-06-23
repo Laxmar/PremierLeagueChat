@@ -21,7 +21,7 @@ async def evaluate_all_teams(use_local_api: bool = True) -> None:
     else:
         squad_api = SportDBApi(config.THE_SPORT_API_KEY.get_secret_value())
         
-    agent = PremierLeagueAgent(config.model_name, squad_api)
+    agent = PremierLeagueAgent(config.MODEL_NAME, squad_api)
     BASE_QUERY = "Please list all the current senior squad members for the {team_name} men's team"
     for team in squad_api.get_teams():
         query = BASE_QUERY.format(team_name=team)

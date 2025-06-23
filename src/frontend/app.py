@@ -75,7 +75,7 @@ def main():
             set_debug(True)
             
         squad_api = SportDBApi(config.THE_SPORT_API_KEY.get_secret_value())
-        agent = PremierLeagueAgent(config.model_name, squad_api)
+        agent = PremierLeagueAgent(config.MODEL_NAME, squad_api)
         ui = ChatUI(agent)
         # agnet is saved to session state in PrototypeUI constructor
     else:
