@@ -17,7 +17,7 @@ poetry install
 - copy example_config.yaml to config.yaml
 - fill OPENAI_API_KEY with your OpenAI API key
 - fill THE_SPORT_API_KEY with your TheSportDB API key (https://www.thesportsdb.com/)
-
+- You can also set all environment variables for more check src/configuration.py 
 
 # Usage
 
@@ -74,3 +74,7 @@ https://github.com/users/Laxmar/projects/1/views/1
 ## Docs 
 
 Read the docs/Premier League Chat - Proof of Concept - Documentation.pdf for more information.
+
+## Deployment
+
+App is currently deployed using https://streamlit.io/cloud. Before the deployment, you need to set environment variables in the Streamlit Cloud console. The app is automatically deployed when you push to the main branch.
