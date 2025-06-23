@@ -68,9 +68,9 @@ def main():
     is_setup_completed = _AGENT_SESSION_KEY in st.session_state
     if not is_setup_completed:
         config = Configuration.load()
-        setup_logger(config.logging_level)
+        setup_logger(config.LOGGING_LEVEL)
         
-        if config.langraph_debug:
+        if config.LANGRAPH_DEBUG:
             set_verbose(True)
             set_debug(True)
             
